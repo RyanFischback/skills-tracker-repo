@@ -72,6 +72,10 @@
         margin-top: 16px;
       }
 
+      .single {
+        margin-top: 16px;
+      }
+
       .card {
         background: var(--card);
         border: 1px solid var(--stroke);
@@ -127,6 +131,44 @@
         font-size: 1.15rem;
       }
 
+      .skills-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .skills-grid {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .skill-card {
+        border: 1px solid var(--stroke);
+        background: #fff;
+        border-radius: 14px;
+        padding: 12px;
+      }
+
+      .skill-card strong {
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      .skill-num {
+        display: inline-block;
+        min-width: 26px;
+        text-align: center;
+        border: 1px solid var(--accent-2);
+        border-radius: 999px;
+        padding: 1px 8px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.8rem;
+        color: var(--accent);
+        margin-right: 6px;
+      }
+
       .update-list {
         display: grid;
         gap: 10px;
@@ -177,25 +219,44 @@
         </div>
       </header>
 
-      <section class="grid">
-        <article class="card">
-          <h2>Top 5 Skill Tidbits</h2>
-          <ol class="list">
-            <li><span class="mono">linear MCP</span>: create, update, track tickets without context switching.</li>
-            <li><span class="mono">figma MCP</span>: pull design context fast and implement with higher fidelity.</li>
-            <li><span class="mono">test-driven-development</span>: test first, then code, for fewer regressions.</li>
-            <li><span class="mono">systematic-debugging</span>: diagnose with evidence, not guesswork.</li>
-            <li><span class="mono">verification-before-completion</span>: validate before calling work done.</li>
-          </ol>
-        </article>
+      <section class="single">
         <article class="card">
           <h2>How It Runs</h2>
           <ul class="list">
-            <li>Weekly: what skills were most useful and why.</li>
-            <li>Monthly: top 5 ranking and process improvements.</li>
-            <li>GitHub repo is the source of truth.</li>
+            <li>Weekly updates summarize what each skill did in the workflow.</li>
+            <li>Monthly updates keep the top 5 ranking and add iteration notes.</li>
+            <li>This repo and page are the single source of truth.</li>
           </ul>
         </article>
+      </section>
+
+      <section>
+        <div class="skills-head">
+          <h2 class="section-title">Core Skills in Rotation</h2>
+          <a href="viewer.html?doc=skills/skills-directory.md">View full directory</a>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <strong><span class="skill-num">1</span><span class="mono">linear MCP</span></strong>
+            <p>Create, update, and track tickets without context switching. Less admin, more execution.</p>
+          </article>
+          <article class="skill-card">
+            <strong><span class="skill-num">2</span><span class="mono">figma MCP</span></strong>
+            <p>Pull design context and assets fast, then implement with fewer handoff mistakes.</p>
+          </article>
+          <article class="skill-card">
+            <strong><span class="skill-num">3</span><span class="mono">test-driven-development</span></strong>
+            <p>Write the failing test first, then implement minimal code to reduce regressions.</p>
+          </article>
+          <article class="skill-card">
+            <strong><span class="skill-num">4</span><span class="mono">systematic-debugging</span></strong>
+            <p>Use hypotheses and checks to isolate root cause instead of guessing.</p>
+          </article>
+          <article class="skill-card">
+            <strong><span class="skill-num">5</span><span class="mono">verification-before-completion</span></strong>
+            <p>Run fresh verification before marking anything complete.</p>
+          </article>
+        </div>
       </section>
 
       <h2 class="section-title">Recent Updates</h2>
