@@ -10,27 +10,27 @@ Weekly updates keep summaries short, practical, and focused on execution value.
 
 ## Core Skills
 
-1. `linear MCP`: can create, update, and track tickets without context switching. Less admin, more execution.
-2. `figma MCP`: can pull design context and assets fast so implementation is quicker and more accurate.
+1. `linear`: use the linear skill with Linear MCP to create, update, and track tickets with less context switching.
+2. `figma`: use the figma skill with Figma MCP to pull design context and assets for faster implementation.
 3. `test-driven-development`: write the failing test first, then minimal code, then refactor safely.
 4. `systematic-debugging`: isolate root cause with hypotheses and verification, not random guessing.
 5. `verification-before-completion`: run fresh checks before saying work is done. Evidence over assumptions.
 
 ## Skill Breakdown
 
-### 1) `linear MCP`
+### 1) `linear`
 
-- **Description:** Structured Linear project and issue management via MCP.
+- **Description:** Structured Linear project and issue management using the linear skill.
 - **Use cases:** Sprint planning, bug triage, bulk updates, project tracking.
 - **Repo / Source:** Local custom skill (no public repo documented).
-- **Install / Access:** Use from `~/.codex/skills/linear/`. MCP setup: `codex mcp add linear --url https://mcp.linear.app/mcp`, enable `rmcp_client`, then `codex mcp login linear`. Restart Codex after login.
+- **Install / Access:** Use from `~/.codex/skills/linear/`. To get full value, pair it with Linear MCP: `codex mcp add linear --url https://mcp.linear.app/mcp`, enable `rmcp_client`, then `codex mcp login linear`. Restart Codex after login.
 
-### 2) `figma MCP`
+### 2) `figma`
 
-- **Description:** Uses Figma MCP for design context, screenshots, assets, and design-to-code execution.
+- **Description:** Figma-driven implementation workflow using the figma skill.
 - **Use cases:** Figma URL to production UI, node-level context extraction, visual parity checks.
 - **Repo / Source:** Local custom skill (no public repo documented).
-- **Install / Access:** Use from `~/.codex/skills/figma/`. Configure MCP and use design context + screenshot before implementation.
+- **Install / Access:** Use from `~/.codex/skills/figma/`. To get full value, pair it with Figma MCP and use design context + screenshot before implementation.
 
 ### 3) `test-driven-development`
 
