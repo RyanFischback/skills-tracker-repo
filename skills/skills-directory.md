@@ -1,8 +1,7 @@
 # rfischbackdev Skills Tracker
 
 Owner: `rfischbackdev`  
-Last Updated: `2026-03-10`  
-Source of Truth: `GitHub`
+Last Updated: `2026-03-10`
 
 ## What This Tracker Is
 

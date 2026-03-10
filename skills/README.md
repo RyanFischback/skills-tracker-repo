@@ -1,6 +1,6 @@
 # Skills Tracker Workspace
 
-This directory is the GitHub source of truth for your evolving skills tracker.
+This directory holds the weekly content for the evolving skills tracker.
 
 ## Files
 
