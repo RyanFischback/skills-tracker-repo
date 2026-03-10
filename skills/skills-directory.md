@@ -20,38 +20,38 @@ Weekly updates keep summaries short, practical, and focused on execution value.
 
 ### 1) `linear MCP`
 
-Description: Structured Linear project and issue management via MCP.  
-Use cases: Sprint planning, bug triage, bulk updates, project tracking.  
-Repo / Source: Local custom skill (no public repo documented).  
-Install / Access: Use from `~/.codex/skills/linear/`. MCP setup: `codex mcp add linear --url https://mcp.linear.app/mcp`, enable `rmcp_client`, then `codex mcp login linear`. Restart Codex after login.
+- **Description:** Structured Linear project and issue management via MCP.
+- **Use cases:** Sprint planning, bug triage, bulk updates, project tracking.
+- **Repo / Source:** Local custom skill (no public repo documented).
+- **Install / Access:** Use from `~/.codex/skills/linear/`. MCP setup: `codex mcp add linear --url https://mcp.linear.app/mcp`, enable `rmcp_client`, then `codex mcp login linear`. Restart Codex after login.
 
 ### 2) `figma MCP`
 
-Description: Uses Figma MCP for design context, screenshots, assets, and design-to-code execution.  
-Use cases: Figma URL to production UI, node-level context extraction, visual parity checks.  
-Repo / Source: Local custom skill (no public repo documented).  
-Install / Access: Use from `~/.codex/skills/figma/`. Configure MCP and use design context + screenshot before implementation.
+- **Description:** Uses Figma MCP for design context, screenshots, assets, and design-to-code execution.
+- **Use cases:** Figma URL to production UI, node-level context extraction, visual parity checks.
+- **Repo / Source:** Local custom skill (no public repo documented).
+- **Install / Access:** Use from `~/.codex/skills/figma/`. Configure MCP and use design context + screenshot before implementation.
 
 ### 3) `test-driven-development`
 
-Description: TDD workflow with failing test first, minimal implementation second, refactor third.  
-Use cases: New features, bug fixes, regression prevention.  
-Repo / Source: Local superpower skill (no public repo documented).  
-Install / Access: Use from `~/.codex/superpowers/skills/test-driven-development/` before writing implementation code.
+- **Description:** TDD workflow with failing test first, minimal implementation second, refactor third.
+- **Use cases:** New features, bug fixes, regression prevention.
+- **Repo / Source:** Local superpower skill (no public repo documented).
+- **Install / Access:** Use from `~/.codex/superpowers/skills/test-driven-development/` before writing implementation code.
 
 ### 4) `systematic-debugging`
 
-Description: Root-cause debugging process based on explicit hypotheses and verification.  
-Use cases: Flaky tests, unknown regressions, hard-to-reproduce bugs.  
-Repo / Source: Local superpower skill (no public repo documented).  
-Install / Access: Use from `~/.codex/superpowers/skills/systematic-debugging/` before proposing fixes.
+- **Description:** Root-cause debugging process based on explicit hypotheses and verification.
+- **Use cases:** Flaky tests, unknown regressions, hard-to-reproduce bugs.
+- **Repo / Source:** Local superpower skill (no public repo documented).
+- **Install / Access:** Use from `~/.codex/superpowers/skills/systematic-debugging/` before proposing fixes.
 
 ### 5) `verification-before-completion`
 
-Description: Requires fresh command evidence before claiming work is complete.  
-Use cases: Pre-commit checks, pre-PR validation, preventing false completion claims.  
-Repo / Source: Local superpower skill (no public repo documented).  
-Install / Access: Use from `~/.codex/superpowers/skills/verification-before-completion/` before completion claims.
+- **Description:** Requires fresh command evidence before claiming work is complete.
+- **Use cases:** Pre-commit checks, pre-PR validation, preventing false completion claims.
+- **Repo / Source:** Local superpower skill (no public repo documented).
+- **Install / Access:** Use from `~/.codex/superpowers/skills/verification-before-completion/` before completion claims.
 
 ## Updates
 
