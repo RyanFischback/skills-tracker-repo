@@ -1,6 +1,6 @@
-# Skills Tracker Repo
+# rfischbackdev Skills Tracker Repo
 
-Public skills tracker for recurring weekly and monthly updates.
+Public-facing `rfischbackdev` skills tracker for recurring weekly and monthly updates.
 
 ## Live Site
 
@@ -17,3 +17,8 @@ The web UI consists of:
 
 - `index.html` (landing page)
 - `viewer.html` (markdown viewer for skill docs and updates)
+
+## Profiles
+
+- Instagram: https://instagram.com/rfischbackdev
+- GitHub: https://github.com/RyanFischback
