@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills Tracker</title>
+    <meta
+      name="description"
+      content="Public skills tracker with top workflow skills, weekly updates, and monthly summaries."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f6f5f1;
+        --ink: #1f2937;
+        --muted: #4b5563;
+        --card: #ffffffcc;
+        --stroke: #d1d5db;
+        --accent: #0f766e;
+        --accent-2: #0891b2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Space Grotesk", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 80% 10%, #cffafe 0%, transparent 35%),
+          radial-gradient(circle at 10% 80%, #fde68a 0%, transparent 35%),
+          var(--bg);
+        min-height: 100vh;
+      }
+
+      .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      header {
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(1.9rem, 4vw, 3rem);
+        line-height: 1.05;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .mono {
+        font-family: "IBM Plex Mono", monospace;
+      }
+
+      .grid {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        margin-top: 16px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--stroke);
+        border-radius: 14px;
+        padding: 14px;
+        backdrop-filter: blur(2px);
+      }
+
+      .card h2,
+      .card h3 {
+        margin: 0 0 10px;
+        font-size: 1.05rem;
+      }
+
+      .list {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .list li {
+        margin: 6px 0;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .btn {
+        display: inline-block;
+        border: 1px solid var(--stroke);
+        border-radius: 999px;
+        padding: 8px 12px;
+        text-decoration: none;
+        color: var(--ink);
+        background: #fff;
+      }
+
+      .btn:hover {
+        border-color: var(--accent-2);
+      }
+
+      .section-title {
+        margin: 26px 0 10px;
+        font-size: 1.15rem;
+      }
+
+      .update-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .update-item {
+        border: 1px solid var(--stroke);
+        border-left: 5px solid var(--accent);
+        background: #fff;
+        border-radius: 10px;
+        padding: 10px 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <p class="mono">Public Skills Tracker</p>
+        <h1>Top Workflow Skills</h1>
+        <p>
+          Live index for core skills, plus weekly and monthly update logs.
+        </p>
+        <div class="buttons">
+          <a class="btn" href="viewer.html?doc=skills/skills-directory.md"
+            >Open Skills Directory</a
+          >
+          <a
+            class="btn"
+            href="https://github.com/RyanFischback/skills-tracker-repo"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View GitHub Repo</a
+          >
+        </div>
+      </header>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Top 5</h2>
+          <ol class="list">
+            <li><span class="mono">linear</span></li>
+            <li><span class="mono">figma</span></li>
+            <li><span class="mono">test-driven-development</span></li>
+            <li><span class="mono">systematic-debugging</span></li>
+            <li><span class="mono">verification-before-completion</span></li>
+          </ol>
+        </article>
+        <article class="card">
+          <h2>Cadence</h2>
+          <ul class="list">
+            <li>Weekly snapshots: top active skills + wins/blockers</li>
+            <li>Monthly summary: ranked skills + process changes</li>
+            <li>GitHub remains the source of truth</li>
+          </ul>
+        </article>
+      </section>
+
+      <h2 class="section-title">Recent Updates</h2>
+      <section class="update-list">
+        <article class="update-item">
+          <h3 class="mono">2026-W11 (Weekly)</h3>
+          <a href="viewer.html?doc=skills/updates/2026-W11.md">Open update</a>
+        </article>
+        <article class="update-item">
+          <h3 class="mono">2026-03 (Monthly)</h3>
+          <a href="viewer.html?doc=skills/updates/2026-03.md">Open update</a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
