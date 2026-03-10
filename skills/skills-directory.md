@@ -1,7 +1,7 @@
 # Skills Tracker Template (Weekly + Monthly)
 
 Owner: `[Your Name]`  
-Last Updated: `[YYYY-MM-DD]`  
+Last Updated: `2026-03-10`  
 Audience: `[Team / Clients / Internal]`  
 Cadence: `Weekly + Monthly`
 
@@ -75,5 +75,5 @@ docs/
 
 | Period | Update Type | Owner | Link |
 | --- | --- | --- | --- |
-| `[2026-W11]` | Weekly | `[name]` | `[link]` |
-| `[2026-03]` | Monthly | `[name]` | `[link]` |
+| `2026-W11` | Weekly | `Ryan Fischback` | `skills/updates/2026-W11.md` |
+| `2026-03` | Monthly | `Ryan Fischback` | `skills/updates/2026-03.md` |
