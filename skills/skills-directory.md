@@ -22,14 +22,14 @@ Weekly updates keep summaries short, practical, and focused on execution value.
 
 - **Description:** Structured Linear project and issue management using the linear skill.
 - **Use cases:** Sprint planning, bug triage, bulk updates, project tracking.
-- **Repo / Source:** Local custom skill (no public repo documented).
+- **Repo / Source:** Embedded in Codex.
 - **Install / Access:** Use from `~/.codex/skills/linear/`. To get full value, pair it with Linear MCP: `codex mcp add linear --url https://mcp.linear.app/mcp`, enable `rmcp_client`, then `codex mcp login linear`. Restart Codex after login.
 
 ### 2) `figma`
 
 - **Description:** Figma-driven implementation workflow using the figma skill.
 - **Use cases:** Figma URL to production UI, node-level context extraction, visual parity checks.
-- **Repo / Source:** Local custom skill (no public repo documented).
+- **Repo / Source:** Embedded in Codex.
 - **Install / Access:** Use from `~/.codex/skills/figma/`. To get full value, pair it with Figma MCP and use design context + screenshot before implementation.
 
 ### 3) `test-driven-development`
