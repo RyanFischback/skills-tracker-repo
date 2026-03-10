@@ -36,21 +36,21 @@ Weekly updates keep summaries short, practical, and focused on execution value.
 
 - **Description:** TDD workflow with failing test first, minimal implementation second, refactor third.
 - **Use cases:** New features, bug fixes, regression prevention.
-- **Repo / Source:** Local superpower skill (no public repo documented).
+- **Repo / Source:** https://github.com/obra/superpowers
 - **Install / Access:** Use from `~/.codex/superpowers/skills/test-driven-development/` before writing implementation code.
 
 ### 4) `systematic-debugging`
 
 - **Description:** Root-cause debugging process based on explicit hypotheses and verification.
 - **Use cases:** Flaky tests, unknown regressions, hard-to-reproduce bugs.
-- **Repo / Source:** Local superpower skill (no public repo documented).
+- **Repo / Source:** https://github.com/obra/superpowers
 - **Install / Access:** Use from `~/.codex/superpowers/skills/systematic-debugging/` before proposing fixes.
 
 ### 5) `verification-before-completion`
 
 - **Description:** Requires fresh command evidence before claiming work is complete.
 - **Use cases:** Pre-commit checks, pre-PR validation, preventing false completion claims.
-- **Repo / Source:** Local superpower skill (no public repo documented).
+- **Repo / Source:** https://github.com/obra/superpowers
 - **Install / Access:** Use from `~/.codex/superpowers/skills/verification-before-completion/` before completion claims.
 
 ## Updates
