@@ -4,7 +4,7 @@ Public-facing `rfischbackdev` skills tracker for recurring weekly updates.
 
 ## Live Site
 
-Once GitHub Pages is enabled for this repository, the site is available at:
+The site is live at:
 
 - `https://ryanfischback.github.io/skills-tracker-repo/`
 
