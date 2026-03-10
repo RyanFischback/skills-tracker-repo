@@ -49,6 +49,21 @@
         margin-bottom: 16px;
       }
 
+      .cat-badge {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .cat-badge img {
+        width: 38px;
+        height: 38px;
+        object-fit: cover;
+        border-radius: 999px;
+        border: 2px solid #fff;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+      }
+
       .mono {
         font-family: "IBM Plex Mono", monospace;
         color: var(--muted);
@@ -179,7 +194,11 @@
     <main class="wrap">
       <div class="topbar">
         <a class="btn" href="index.html">Back to Home</a>
-        <div class="mono">rfischbackdev</div>
+        <div class="cat-badge" aria-label="rfischbackdev cat brand">
+          <img src="assets/cat1.jpg" alt="Orange and white cat close-up." />
+          <img src="assets/cat2.jpg" alt="Orange and white cat resting by window." />
+          <div class="mono">rfischbackdev</div>
+        </div>
         <a
           class="btn"
           href="https://instagram.com/rfischbackdev"

@@ -23,6 +23,7 @@
         --stroke: #d1d5db;
         --accent: #0f766e;
         --accent-2: #0891b2;
+        --cat: #c76a2a;
       }
 
       * {
@@ -48,6 +49,13 @@
 
       header {
         margin-bottom: 18px;
+      }
+
+      .hero {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1.2fr 1fr;
+        align-items: center;
       }
 
       h1 {
@@ -110,6 +118,53 @@
         flex-wrap: wrap;
         gap: 10px;
         margin-top: 14px;
+      }
+
+      .brand-note {
+        margin-top: 10px;
+        display: inline-block;
+        border: 1px solid #f0d9c7;
+        background: #fff7ef;
+        color: #7c4623;
+        border-radius: 999px;
+        padding: 6px 10px;
+        font-size: 0.9rem;
+      }
+
+      .cat-brand {
+        position: relative;
+        min-height: 260px;
+      }
+
+      .cat-main,
+      .cat-side {
+        margin: 0;
+        border-radius: 18px;
+        overflow: hidden;
+        border: 1px solid var(--stroke);
+        box-shadow: 0 16px 34px rgba(0, 0, 0, 0.08);
+        background: #fff;
+      }
+
+      .cat-main {
+        aspect-ratio: 4 / 3;
+      }
+
+      .cat-side {
+        position: absolute;
+        right: -8px;
+        bottom: -18px;
+        width: 42%;
+        border-radius: 16px;
+        transform: rotate(-4deg);
+      }
+
+      .cat-main img,
+      .cat-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
 
       .btn {
@@ -181,38 +236,67 @@
         border-radius: 10px;
         padding: 10px 12px;
       }
+
+      @media (max-width: 860px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .cat-brand {
+          min-height: 220px;
+        }
+
+        .cat-side {
+          width: 45%;
+          right: 0;
+          bottom: -10px;
+        }
+      }
     </style>
   </head>
   <body>
     <main class="wrap">
       <header>
-        <p class="mono">rfischbackdev</p>
-        <h1>rfischbackdev Skills Tracker</h1>
-        <p>
-          Top workflow skills, with quick weekly update logs.
-        </p>
-        <div class="buttons">
-          <a
-            class="btn"
-            href="https://instagram.com/rfischbackdev"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Instagram @rfischbackdev</a
-          >
-          <a
-            class="btn"
-            href="https://github.com/RyanFischback"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub @RyanFischback</a
-          >
-          <a
-            class="btn"
-            href="https://github.com/RyanFischback/skills-tracker-repo"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View GitHub Repo</a
-          >
+        <div class="hero">
+          <div>
+            <p class="mono">rfischbackdev</p>
+            <h1>rfischbackdev Skills Tracker</h1>
+            <p>
+              Top workflow skills, with quick weekly update logs.
+            </p>
+            <p class="brand-note">Cat-powered dev brand.</p>
+            <div class="buttons">
+              <a
+                class="btn"
+                href="https://instagram.com/rfischbackdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram @rfischbackdev</a
+              >
+              <a
+                class="btn"
+                href="https://github.com/RyanFischback"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub @RyanFischback</a
+              >
+              <a
+                class="btn"
+                href="https://github.com/RyanFischback/skills-tracker-repo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View GitHub Repo</a
+              >
+            </div>
+          </div>
+          <div class="cat-brand" aria-label="rfischbackdev cat brand photos">
+            <figure class="cat-main">
+              <img src="assets/cat1.jpg" alt="Orange and white cat close-up at desk setup." />
+            </figure>
+            <figure class="cat-side">
+              <img src="assets/cat2.jpg" alt="Orange and white cat relaxing by a window." />
+            </figure>
+          </div>
         </div>
       </header>
 
