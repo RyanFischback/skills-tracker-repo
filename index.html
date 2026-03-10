@@ -120,17 +120,6 @@
         margin-top: 14px;
       }
 
-      .brand-note {
-        margin-top: 10px;
-        display: inline-block;
-        border: 1px solid #f0d9c7;
-        background: #fff7ef;
-        color: #7c4623;
-        border-radius: 999px;
-        padding: 6px 10px;
-        font-size: 0.9rem;
-      }
-
       .cat-brand {
         position: relative;
         min-height: 260px;
@@ -168,13 +157,21 @@
       }
 
       .btn {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
         border: 1px solid var(--stroke);
         border-radius: 999px;
         padding: 8px 12px;
         text-decoration: none;
         color: var(--ink);
         background: #fff;
+      }
+
+      .btn svg {
+        width: 16px;
+        height: 16px;
+        flex: 0 0 auto;
       }
 
       .btn:hover {
@@ -264,21 +261,26 @@
             <p>
               Top workflow skills, with quick weekly update logs.
             </p>
-            <p class="brand-note">Cat-powered dev brand.</p>
             <div class="buttons">
               <a
                 class="btn"
                 href="https://instagram.com/rfischbackdev"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Instagram @rfischbackdev</a
+                ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect>
+                  <circle cx="12" cy="12" r="4.2"></circle>
+                  <circle cx="17.5" cy="6.5" r="1"></circle>
+                </svg>Instagram @rfischbackdev</a
               >
               <a
                 class="btn"
                 href="https://github.com/RyanFischback"
                 target="_blank"
                 rel="noopener noreferrer"
-                >GitHub @RyanFischback</a
+                ><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.59 2 12.24c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05A9.36 9.36 0 0 1 12 6.98c.85 0 1.7.12 2.5.36 1.9-1.33 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.24C22 6.59 17.52 2 12 2Z"></path>
+                </svg>GitHub @RyanFischback</a
               >
               <a
                 class="btn"
