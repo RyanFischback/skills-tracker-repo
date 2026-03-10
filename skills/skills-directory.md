@@ -7,7 +7,7 @@ Source of Truth: `GitHub`
 ## What This Tracker Is
 
 This is a lightweight public tracker for the five workflow skills used most often in delivery.  
-Weekly and monthly updates keep summaries short, practical, and focused on execution value.
+Weekly updates keep summaries short, practical, and focused on execution value.
 
 ## Core Skills
 
@@ -20,7 +20,6 @@ Weekly and monthly updates keep summaries short, practical, and focused on execu
 ## Updates
 
 - Weekly update: [`2026-W11`](updates/2026-W11.md)
-- Monthly update: [`2026-03`](updates/2026-03.md)
 
 ## Profiles
 

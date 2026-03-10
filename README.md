@@ -1,6 +1,6 @@
 # rfischbackdev Skills Tracker Repo
 
-Public-facing `rfischbackdev` skills tracker for recurring weekly and monthly updates.
+Public-facing `rfischbackdev` skills tracker for recurring weekly updates.
 
 ## Live Site
 
