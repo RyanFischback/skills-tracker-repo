@@ -209,6 +209,39 @@
         margin-bottom: 6px;
       }
 
+      .preview-meta {
+        display: inline-block;
+        margin-bottom: 8px;
+        border: 1px solid var(--stroke);
+        border-radius: 999px;
+        padding: 2px 10px;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      .preview-headline {
+        margin: 0 0 6px;
+        font-size: 1.1rem;
+        line-height: 1.25;
+      }
+
+      .preview-subheader {
+        margin-bottom: 10px;
+      }
+
+      .preview-points {
+        margin: 0 0 10px;
+        padding-left: 18px;
+      }
+
+      .preview-points li + li {
+        margin-top: 6px;
+      }
+
+      .preview-link {
+        font-weight: 500;
+      }
+
       .skill-num {
         display: inline-block;
         min-width: 26px;
@@ -316,34 +349,9 @@
 
       <section>
         <div class="skills-head">
-          <h2 class="section-title">Core Skills in Rotation (Week 2: Subagent Focus)</h2>
+          <h2 id="week-preview-title" class="section-title"></h2>
         </div>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <strong><span class="skill-num">1</span><span class="mono">superpowers</span></strong>
-            <p>Centers work on Subagent Driven Development so a lead agent orchestrates specialized subagents for implementation and review.</p>
-          </article>
-          <article class="skill-card">
-            <strong><span class="skill-num">2</span><span class="mono">linear</span></strong>
-            <p>Use the linear skill with Linear MCP to create, update, and track tickets without context switching.</p>
-          </article>
-          <article class="skill-card">
-            <strong><span class="skill-num">3</span><span class="mono">figma</span></strong>
-            <p>Use the figma skill with Figma MCP to pull design context and assets for faster, cleaner implementation.</p>
-          </article>
-          <article class="skill-card">
-            <strong><span class="skill-num">4</span><span class="mono">test-driven-development</span></strong>
-            <p>Write the failing test first, then implement minimal code to reduce regressions.</p>
-          </article>
-          <article class="skill-card">
-            <strong><span class="skill-num">5</span><span class="mono">systematic-debugging</span></strong>
-            <p>Use hypotheses and checks to isolate root cause instead of guessing.</p>
-          </article>
-          <article class="skill-card">
-            <strong><span class="skill-num">6</span><span class="mono">verification-before-completion</span></strong>
-            <p>Run fresh verification before marking anything complete.</p>
-          </article>
-        </div>
+        <div id="week-preview" class="skills-grid"></div>
       </section>
 
       <h2 class="section-title">Recent Updates</h2>
@@ -358,5 +366,39 @@
         </article>
       </section>
     </main>
+    <script>
+      // Weekly homepage snippet configuration lives in one place for easy rotation.
+      const WEEK_PREVIEW_CONFIG = {
+        sectionTitle: "Current Week Preview",
+        currentWeek: {
+          label: "2026-W12",
+          headline: "Subagents Are The New Wave",
+          subheader: "This week focuses on Subagent Driven Development as the primary execution model.",
+          bullets: [
+            "Lead agent orchestrates specialized subagents for planning, implementation, and review.",
+            "Spec-review subagents add a planning-quality gate before coding begins.",
+            "Task-level routing to the cheapest capable model improves both throughput and cost efficiency."
+          ],
+          docPath: "skills/updates/2026-W12.md"
+        }
+      };
+
+      const previewTitle = document.getElementById("week-preview-title");
+      const previewRoot = document.getElementById("week-preview");
+      const { sectionTitle, currentWeek } = WEEK_PREVIEW_CONFIG;
+
+      previewTitle.textContent = sectionTitle;
+      previewRoot.innerHTML = `
+        <article class="skill-card">
+          <div class="preview-meta mono">${currentWeek.label}</div>
+          <h3 class="preview-headline">${currentWeek.headline}</h3>
+          <p class="preview-subheader">${currentWeek.subheader}</p>
+          <ul class="preview-points">
+            ${currentWeek.bullets.map((point) => `<li>${point}</li>`).join("")}
+          </ul>
+          <a class="preview-link" href="viewer.html?doc=${currentWeek.docPath}">Read the full weekly update</a>
+        </article>
+      `;
+    </script>
   </body>
 </html>
